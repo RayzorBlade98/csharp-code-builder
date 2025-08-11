@@ -37,9 +37,9 @@ public class CodeStringBuilder {
     /// <summary>
     /// Appends a copy of the specified string followed by the default line terminator to the end of the current <see cref="CodeStringBuilder"/> object
     /// </summary>
-    /// <param name="value">The string to append</param>
+    /// <param name="value">Optional string to append. If <c>null</c>, only the line terminator will be added</param>
     /// <returns>A reference to this instance after the append operation has completed</returns>
-    public CodeStringBuilder AppendLine(string value) {
+    public CodeStringBuilder AppendLine(string? value = null) {
         _builder.Append(Indentations)
                 .AppendLine(value);
         return this;

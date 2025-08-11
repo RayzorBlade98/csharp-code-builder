@@ -50,6 +50,6 @@ public class ClassBuilder : ITypeBuilder {
 
         return builder
                .RemoveIndentation()
-               .Append("}");
+               .AppendLine("}");
     }
 }
