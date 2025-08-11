@@ -1,0 +1,6 @@
+﻿public class BasicClass {
+    public void Method1() {
+    }
+    public void Method2() {
+    }
+}
